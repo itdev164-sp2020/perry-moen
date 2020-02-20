@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
     <Layout>
     <SEO title="Contact" />
     <h1>Contact Us</h1>
-    <p>Please send all inqueries to: </p>
+    <p>Please send all inquiries to: </p>
     <div>{company}</div>
     <div>{`C/O ${name}`}</div>
     <div>{address}</div>

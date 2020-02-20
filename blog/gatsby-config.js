@@ -5,12 +5,12 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog`,
-    description: `ITDEV164 2020`,
-    author: `Perry Moen`,
+    description: `ITDEV-164 Gatsby Blog`,
+    author: `Mike Hunsicker`,
     contact: {
-      name:`Perry Moen`,
-      company:`Blogs inc.`,
-      address:`123 street`
+      name: `Mike Hunsicker`,
+      company: `Blogs Inc.`,
+      address: `PO Box 1234`
     }
   },
   plugins: [
@@ -18,12 +18,11 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `${process.env.SPACE_ID}`,
-        accessToken:`${process.env.ACCESS_TOKEN}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
       }
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
