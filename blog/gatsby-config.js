@@ -4,11 +4,11 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Gatsby Blog is pretty sweet`,
     description: `ITDEV-164 Gatsby Blog`,
-    author: `Mike Hunsicker`,
+    author: `Perry Moen`,
     contact: {
-      name: `Mike Hunsicker`,
+      name: `Perry Moen`,
       company: `Blogs Inc.`,
       address: `PO Box 1234`
     }
