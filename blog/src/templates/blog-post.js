@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
@@ -28,3 +29,4 @@ export const pageQuery = graphql`
     }
   }
 `
+//C:\Users\mke-perrym\Desktop\ITDEV2020\perry-moen\blog\src\templates\blog-post.js

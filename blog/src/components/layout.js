@@ -1,3 +1,4 @@
+
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -8,17 +9,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styled ,{ ThemeProvider } from 'styled-components'
-import { Gray } from './themes/Gray'
+import styled, { ThemeProvider } from 'styled-components'
+import { Gray } from '../themes/Gray'
 import Header from "./header"
 import GlobalStyle from './GlobalStyle'
 
-
-const Content = styled.div `
-  margin: 0 auto;
+const Content = styled.div`
+  margin: 0px auto;
   max-width: 960px;
-  padding: 0 1.0875 1.45 rem;
-  padding-top: 0;
+  padding: 0px 1.0875rem 1.45rem;
 `
 
 const Layout = ({ children }) => {
@@ -33,20 +32,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-    <ThemeProvider theme= {Gray}>
-      <GlobalStyle/>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Content>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-          </Content>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={Gray}>
+      <GlobalStyle />
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <Content>
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </Content>
+    </ThemeProvider>
   )
 }
 
